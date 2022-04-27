@@ -1,0 +1,551 @@
+/*------
+PALETA DE COLORES
+------*/
+/*------
+FUENTES
+------*/
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #001861;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+/*------
+PALETA DE COLORES
+------*/
+/*------
+FUENTES
+------*/
+.navegacion {
+  opacity: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  height: 32px;
+  padding-top: 8px;
+  top: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  animation-name: anim-nav;
+  animation-duration: 1000ms;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+.navegacion ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navegacion ul #boton-1 {
+  opacity: 0;
+  animation-name: opacidad;
+  animation-duration: 1000ms;
+  animation-delay: 1450ms;
+  animation-fill-mode: forwards;
+}
+.navegacion ul #boton-2 {
+  opacity: 0;
+  animation-name: opacidad;
+  animation-duration: 1000ms;
+  animation-delay: 1600ms;
+  animation-fill-mode: forwards;
+}
+.navegacion ul #boton-3 {
+  opacity: 0;
+  animation-name: opacidad;
+  animation-duration: 1000ms;
+  animation-delay: 1750ms;
+  animation-fill-mode: forwards;
+}
+.navegacion ul #boton-4 {
+  opacity: 0;
+  animation-name: opacidad;
+  animation-duration: 1000ms;
+  animation-delay: 1900ms;
+  animation-fill-mode: forwards;
+}
+.navegacion ul li {
+  list-style: none;
+}
+.navegacion ul li a {
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  color: #fff;
+  font-size: 16px;
+  transition: all 210ms ease-in-out;
+}
+.navegacion ul li a:hover {
+  color: #0138e0;
+  font-weight: 900;
+  text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 769px) {
+  .navegacion {
+    width: 60%;
+    left: 20%;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  .navegacion {
+    width: 70%;
+    left: 15%;
+  }
+}
+@media (max-width: 499px) {
+  .navegacion {
+    width: 90%;
+    left: 5%;
+  }
+}
+main {
+  margin-top: 80px;
+  display: grid;
+}
+main .principal {
+  grid-area: "principal";
+}
+main .principal .job {
+  opacity: 0;
+  position: relative;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+  text-align: center;
+  animation-name: opacidad-2;
+  animation-duration: 2200ms;
+  animation-delay: 2200ms;
+  animation-fill-mode: forwards;
+}
+main .principal .nombre {
+  opacity: 0;
+  position: relative;
+  color: #0138e0;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 6px 6px 8px #000;
+  animation-name: opacidad-3;
+  animation-duration: 2200ms;
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
+}
+main .principal .tools {
+  display: flex;
+  justify-content: space-around;
+}
+main .principal .tools #i1 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 3450ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i1:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .principal .tools #i2 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 3600ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i2:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .principal .tools #i3 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 3750ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i3:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .principal .tools #i4 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 3900ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i4:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .principal .tools #i5 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 4050ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i5:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .principal .tools #i6 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 4200ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i6:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .principal .tools #i7 {
+  position: relative;
+  opacity: 0;
+  animation-name: anitool;
+  animation-duration: 2000ms;
+  animation-delay: 4350ms;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(8px 8px 10px #000);
+  transition: all 520ms ease-in-out;
+}
+main .principal .tools #i7:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+main .secundario {
+  opacity: 0;
+  grid-area: secundario;
+  border: 5px solid #0138e0;
+  border-radius: 4rem;
+  box-shadow: 10px 10px 25px #000;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  animation-name: alto;
+  animation-duration: 2800ms;
+  animation-delay: 2500ms;
+  animation-fill-mode: forwards;
+}
+main .secundario #p1 {
+  animation-name: opacidad;
+  animation-duration: 1500ms;
+  animation-delay: 3520ms;
+  animation-fill-mode: forwards;
+}
+main .secundario #p2 {
+  animation-name: opacidad;
+  animation-duration: 1500ms;
+  animation-delay: 4040ms;
+  animation-fill-mode: forwards;
+}
+main .secundario #p3 {
+  animation-name: opacidad;
+  animation-duration: 1500ms;
+  animation-delay: 4560ms;
+  animation-fill-mode: forwards;
+}
+main .secundario #p4 {
+  animation-name: opacidad;
+  animation-duration: 1500ms;
+  animation-delay: 5080ms;
+  animation-fill-mode: forwards;
+}
+main .secundario .personal {
+  opacity: 0;
+  cursor: pointer;
+  border: 3px solid #0138e0;
+  border-radius: 0rem 1rem 0rem 1rem;
+  box-shadow: 10px 10px 25px #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 12px 0px;
+  padding: 8px;
+  min-height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+}
+main .secundario .personal:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px #000;
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+main .secundario .personal img {
+  width: 40px;
+  filter: drop-shadow(4px 4px 6px #000);
+}
+main .secundario .personal h2, main .secundario .personal p, main .secundario .personal h3 {
+  width: 100%;
+  text-shadow: 3px 3px 5px #000;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  text-align: center;
+}
+main .secundario .personal h3 {
+  font-size: 24px;
+  margin-top: -40px;
+}
+main .secundario .personal p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 0px 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  margin-top: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  animation-name: opacidad;
+  animation-duration: 250ms;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+footer div {
+  margin: 0px 10px;
+}
+footer div h2, footer div main .secundario .personal h3, main .secundario .personal footer div h3, footer div main .secundario .personal p, main .secundario .personal footer div p {
+  color: #0138e0;
+  font-size: 1.3rem;
+  font-family: "Marcellus", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  text-shadow: 5px 5px 7px #000;
+}
+footer div p {
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+footer div img {
+  height: 75px;
+  filter: drop-shadow(3px 3px 1px #0138e0);
+}
+
+@media (min-width: 1000px) {
+  main {
+    grid-template-areas: "principal principal principal principal principal" "secundario secundario secundario secundario secundario" ". footer footer footer .";
+  }
+  main .principal .job {
+    margin: 70px 0 0 420px;
+    font-size: 16px;
+  }
+  main .principal .nombre {
+    font-size: 60px;
+    margin-top: -14px;
+  }
+  main .principal .tools {
+    width: 50%;
+    margin-left: 25%;
+  }
+  main .principal .tools img {
+    width: 7%;
+  }
+  main .secundario {
+    width: 90%;
+    min-height: 450px;
+    margin: 150px 2.5%;
+    padding: 25px 2.5%;
+  }
+  main .secundario .personal {
+    width: 40%;
+  }
+}
+@media (min-width: 769px) and (max-width: 999px) {
+  main {
+    grid-template-areas: "principal principal principal principal principal" "secundario secundario secundario secundario secundario" ". footer footer footer .";
+  }
+  main .principal .job {
+    margin: 70px 0 0 420px;
+    font-size: 16px;
+  }
+  main .principal .nombre {
+    font-size: 60px;
+    margin-top: -14px;
+  }
+  main .principal .tools {
+    width: 60%;
+    margin-left: 20%;
+  }
+  main .principal .tools img {
+    width: 7%;
+  }
+  main .secundario {
+    width: 90%;
+    min-height: 450px;
+    margin: 150px 2.5%;
+    padding: 25px 2.5%;
+  }
+  main .secundario .personal {
+    width: 40%;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  main {
+    grid-template-areas: "principal principal principal" "secundario secundario secundario" "footer footer footer";
+  }
+  main .principal .job {
+    margin: 70px 0 0 220px;
+    font-size: 12px;
+  }
+  main .principal .nombre {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+  main .principal .tools {
+    width: 60%;
+    margin-left: 20%;
+  }
+  main .principal .tools img {
+    width: 10%;
+  }
+  main .secundario {
+    width: 80%;
+    margin: 150px 5%;
+    padding: 25px 5%;
+  }
+  main .secundario .personal {
+    width: 75%;
+  }
+}
+@media (max-width: 499px) {
+  main {
+    grid-template-areas: "principal" "secundario" "footer";
+  }
+  main .principal .job {
+    margin-top: 60px;
+    font-size: 12px;
+  }
+  main .principal .nombre {
+    font-size: 30px;
+    margin-top: -3px;
+  }
+  main .principal .tools {
+    width: 70%;
+    margin-left: 15%;
+  }
+  main .principal .tools img {
+    width: 10%;
+  }
+  main .secundario {
+    width: 80%;
+    margin: 150px 5%;
+    padding: 25px 5%;
+  }
+  main .secundario .personal {
+    width: 75%;
+  }
+}
+@keyframes anim-nav {
+  0% {
+    left: 0;
+    opacity: 0;
+    width: 32px;
+  }
+  50% {
+    width: 32px;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacidad {
+  0% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacidad-2 {
+  0% {
+    top: 20px;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes opacidad-3 {
+  0% {
+    top: -40px;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes anitool {
+  0% {
+    left: 3rem;
+    filter: blur(1rem) drop-shadow(0px 0px 5px #000);
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    filter: blur(0) drop-shadow(8px 8px 10px #000);
+    opacity: 0.6;
+  }
+}
+@keyframes alto {
+  0% {
+    border: 0;
+    height: 0px;
+    background-color: #000;
+  }
+  100% {
+    opacity: 1;
+    background-color: transparent;
+    border: 5px solid #0138e0;
+  }
+}
+
+/*# sourceMappingURL=maincss.css.map */
