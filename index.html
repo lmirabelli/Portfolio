@@ -17,17 +17,18 @@
         ------------>
     <nav class="navegacion">
         <ul>
-            <!-- <li id="boton-1"><a href="index.html">Inicio</a></li> -->
-            <li id="boton-2"><a href="html/proyectos.html">Trabajos</a></li>
-            <li id="boton-3"><a href="html/contacto.html">Contacto</a></li>
-            <li id="boton-4"><a href="html/conoceme.html">Quien Soy</a></li>
+            <li id="boton-1"><a href="#mi-nombre">Inicio</a></li>
+            <li id="boton-2"><a href="#servicio">Servicios</a></li>
+            <li id="boton-3"><a href="#trabajos">Proyectos</a></li>
+            <li id="boton-4"><a href="#unpocodemi">Quien Soy</a></li>
+            <li id="boton-5"><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <!------------------
         CUERPO PRINCIPAL
         ------------------>
     <Main>
-        <div class="principal">
+        <div class="principal" id="mi-nombre">
             <h1 class="job">Front-end Web developer</h1>
             <h2 class="nombre">Leonardo Mirabelli</h2>
             <div class="tools">
@@ -40,18 +41,50 @@
                 <img src="images/sass-blanco.png" title="Sass" id="i7">
             </div>
         </div>
-        <div class="secundario">
-            <div class="personal" id="p1">
-                <img src="images/localizacion.svg" alt="">
-                <h2>Buenos Aires</h2>
-                <h3>Argentina</h3>
+        <div class="secundario" id="unpocodemi">
+            <h2>Un poco de mi</h2>
+            <p>
+                <img src="images/yo.png" alt="">
+                Me llamo Leonardo Mirabelli, soy de Buenos Aires y tengo 35 años.
+                Estoy dando mis primeros pasos en el mundo del desarrollo Web, teniendo conocimientos en HTML, CSS, Javascript, Git, Github, Sass y Bootstrap.
+                Mi primer acercamiento al mundo de la web fue en el año 2007 con HTML y el desaparecido Front Page, luego por diversos motivos deje este maravilloso mundo hasta que en el 2018, gracias a los avances tecnologicos pude empezar a sumergirme en este mundo otra vez, estudiando en forma autodidacta con pequeños tutoriales o grandes cursos desde cero. asi poco a poco empece a ponerme al dia, hasta que en el 2022 comence oficialmente a estudiar desde el prinicipio nuevamente, ya que tenia la impresion de que me estaba perdiendo cosas, y asi fue que logre ser Desarrollador Front-End, ahora estoy en la busqueda de experiencias para poder ser mejor y superarme dia a dia. Con mis conocimientos de Desarrollo Web sumado a los que tengo en Adobe Photoshop, Illustrator, Premiere y After Effects siento que estoy capacitado para encarar cualquier proyecto, ya sea individual o en equipo.</p>
+        </div>
+        <div class="secundario" id="servicio">
+            <h2>Servicios</h2>
+            <div class="sub-serv">
+            <h3>Diseño profesional</h3>
+            <p>
+                <img src="images/edit-2.svg" alt="">
+                Diseños modernos y minimalistas, adaptamos tu idea y la hacemos realidad.
+            </p>
             </div>
-            <div class="personal" id="p2">
-                <h2>Conocimientos</h2>
-                <p>Soy Leonardo Mirabelli de Argentina, estoy buscando mis primeras experiencias como desarrollador Front-End, tengo conocimientos en HTML, CSS, Javascript, SASS, GIT, GITHUB y Bootstrap, paralelamente soy autodidacta en Adobe Photoshop, Illustrator, After Effects y Premiere.</p>
+            <div class="sub-serv">
+                <h3>Optimizacion Mobile</h3>
+                <p>
+                    <img src="images/monitor.svg" alt="">
+                    Su sitio web se optimiza automáticamente para dispositivos móviles, por lo que sus visitantes pueden verlo cómodamente desde cualquier dispositivo móvil o PC.
+                </p>
             </div>
-            <div class="personal" id="p3">a</div>
-            <div class="personal" id="p4">a</div>
+            <div class="sub-serv">
+                <h3>Seguridad</h3>
+                <p>
+                    <img src="images/shield.svg" alt="">
+                    Con servidores y protocolos de seguridad de última generación, la seguridad está garantizada para ti y tus visitantes.
+                </p>
+            </div>
+        </div>
+        <div class="secundario" id="trabajos">
+            <h2>Algunos proyectos</h2>
+            <div class="works">
+                <h3>
+                    CCK Design
+                </h3>
+                <img src="images/proyecto-1.png" alt="">
+                <div class="botonera">
+                    <a href="https://github.com/lmirabelli/ProyectoFinal" target="_blank">Codigo</a>
+                    <a href="https://lmirabelli.github.io/ProyectoFinal/" target="_blank">Demo</a>
+                </div>
+            </div>
         </div>
     </Main>
     
@@ -68,5 +101,6 @@
                 <p>E-mail: lmirabelli@gmail.com</p>
             </div>
         </footer>
+        <script src="js/principal.js"></script>
 </body>
 </html>

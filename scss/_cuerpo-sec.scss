@@ -1,0 +1,175 @@
+$recuadro: (
+    opacity: 0,
+    border: 5px solid $color-3,
+    border-radius: 4rem,
+    box-shadow: 10px 10px 25px #000,
+    background-color: rgba($color: #000000, $alpha: 0.3),
+    display: flex,
+    flex-wrap: wrap,
+    justify-content: space-around,
+    animation-name: alto,
+    animation-duration: 1800ms,
+    /* animation-delay: a mano; */
+    animation-fill-mode: forwards,
+);
+
+$info: (
+    opacity: 0,
+    width: 100%,
+    margin: 20px 0px,
+    text-shadow: 3px 3px 5px #000,
+    color: $color-6,
+    font-family: $fuente-principal,
+    font-size: 24px,
+    text-align: center,
+    animation-name: opacidad,
+    animation-duration: 1500ms,
+    animation-delay: 1800ms,
+    animation-fill-mode: forwards,
+);
+
+$anim: (
+    animation-name: opacidad,
+    animation-duration: 1500ms,
+    animation-delay: 1800ms,
+    animation-fill-mode: forwards,
+);
+
+.secundario{
+    @each $clave, $valor in $recuadro{
+            #{$clave}: $valor;
+        }
+        animation-delay: 700ms;
+    h2{
+        @each $clave, $valor in $info{
+            #{$clave}: $valor;
+        }
+        animation-delay: 1800ms;
+    }
+    p{
+        @extend h2;
+        font-size: 16px;
+        text-align: justify;
+        margin: 0px 5px;
+    }
+    .proyect{
+        margin-top: 15px;
+        margin-left: 10%;
+        padding: 1px;
+        width: 80%;
+        border: 1px solid $color-6;
+        transition: all 350ms ease-in-out;
+        &:hover{
+        border: 1px solid $color-3;
+        border-radius: 5vw;
+        filter: brightness(75%) drop-shadow(0px 0px 10px $color-6);
+        }
+    }
+    .sub-serv{
+        width: 40%;
+        padding: 15px;
+        box-shadow: 6px 6px 8px #000;
+        margin-bottom: 20px;
+        h3{
+            @extend h2;
+        }
+    }
+    .works{
+        @extend .sub-serv;
+        width: 45%;
+        opacity: 0;
+        @each $clave, $valor in $anim{
+            #{$clave}: $valor;
+        }
+        img{
+            opacity: 0;
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            transition: all 450ms ease-in-out;
+            filter: sepia(55%);
+            @each $clave, $valor in $anim{
+                #{$clave}: $valor;
+            }
+            &:hover{
+                transform: scale(1.15);
+                filter: sepia(0);
+                border: 2px solid $color-3;
+            }
+        }
+    }
+    .botonera{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-around;
+        a {
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 16px;
+            color: $color-3;
+            background-color: $color-6;
+            border: 2px solid $color-3;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 800ms ease-in-out;
+            &:hover{
+                background-color: $color-4;
+                color: $color-6;
+                border: 2px solid $color-6;
+            }
+        }
+    }
+}
+
+#unpocodemi{
+    grid-area: secundario;
+    height: 350px;
+    p{
+        img{
+            opacity: 0;
+            border: 3px solid transparent;
+            float: left;
+            margin-right: 10px;
+            width: 16%;
+            animation-name: opacidad;
+            animation-duration: 1500ms;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            transition: all 400ms ease-in-out;
+            &:hover{
+                transform: scale(1.2) translateX(12px) rotate(15deg);
+                filter: drop-shadow(10px 10px 15px #000);
+                border: 3px solid $color-3;
+            }
+        }
+    }
+}
+#servicio{
+    grid-area: terza;
+    height: 500px;
+    p{  
+        font-size: 14px;
+        img{
+            opacity: 0;
+            border: 3px solid transparent;
+            float: left;
+            margin-right: 10px;
+            animation-name: opacidad;
+            animation-duration: 1500ms;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            transition: all 400ms ease-in-out;
+            &:hover{
+                transform: scale(1.2) translateX(12px) rotate(15deg);
+                filter: drop-shadow(10px 10px 15px #000);
+            }
+        }
+    }
+}
+
+#trabajos{
+    grid-area: trb;
+}

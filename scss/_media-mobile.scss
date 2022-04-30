@@ -1,0 +1,40 @@
+@media (min-width: 500px) and (max-width: 768px){
+    .navegacion{
+        width: 70%;
+        left: 15%;
+    }
+    main{
+        grid-template-areas:
+        "principal principal principal"
+        "secundario secundario secundario"
+        "terza terza terza"
+        "trb trb trb"
+        "footer footer footer";
+        .principal{
+            .job{
+                margin: 70px 0 0 220px;
+                font-size: 12px;
+            }
+            .nombre{
+                font-size: 40px;
+                margin-top: -10px;
+            }
+            .tools{
+                width: 60%;
+                margin-left: 20%;
+                img{
+                    width: 10%;
+                }
+            }
+        }
+        .secundario{
+            width: 80%;
+            height: auto;
+            margin: 150px 5%;
+            padding: 25px 5%;
+            .personal{
+                width: 75%;
+            }
+        }
+    }
+}

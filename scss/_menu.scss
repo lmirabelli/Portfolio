@@ -18,7 +18,7 @@
     ul{
         display: flex;
         justify-content: space-around;
-        @for $bt from 1 to 5 {
+        @for $bt from 1 to 6 {
             #boton-#{$bt}{
                 opacity: 0;
                 animation-name: opacidad;
@@ -35,30 +35,12 @@
                 color: $color-6;
                 font-size: 16px;
                 transition: all 210ms ease-in-out;
-                &:hover{
+                &:hover, &.activo{
                     color: $color-3;
                     font-weight: 900;
                     text-shadow: 3px 3px 6px rgba($color: #fff, $alpha: 0.3);
                 }
             }
         }
-    }
-}
-@media (min-width: 769px){
-    .navegacion{
-        width: 60%;
-        left: 20%;
-    }
-}
-@media (min-width: 500px) and (max-width: 768px){
-    .navegacion{
-        width: 70%;
-        left: 15%;
-    }
-}
-@media (max-width: 499px){
-    .navegacion{
-        width: 90%;
-        left: 5%;
     }
 }
