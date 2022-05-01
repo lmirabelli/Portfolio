@@ -173,3 +173,32 @@ $anim: (
 #trabajos{
     grid-area: trb;
 }
+
+#contacto{
+    grid-area: ctc;
+    div{
+        display: flex;
+        justify-content: center;
+        p{  
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        a{
+            img{
+                opacity: 0;
+                width: 30px;
+                border: 3px solid transparent;
+                margin-right: 10px;
+                animation-name: opacidad;
+                animation-duration: 1500ms;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+                transition: all 400ms ease-in-out;
+                &:hover{
+                    transform: scale(1.2) translateX(12px) rotate(15deg);
+                    filter: drop-shadow(10px 10px 15px #000);
+                }
+            }
+        }
+    }
+}
