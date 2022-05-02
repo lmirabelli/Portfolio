@@ -544,12 +544,20 @@ footer div .ctc:hover {
   }
   main .secundario {
     width: 80%;
-    height: auto;
-    margin: 150px 5%;
+    margin: 75px 5%;
     padding: 25px 5%;
   }
   main .secundario .personal {
     width: 75%;
+  }
+  main #unpocodemi {
+    height: 500px;
+  }
+  main #unpocodemi h2, main #unpocodemi .secundario p, .secundario main #unpocodemi p, main #unpocodemi .secundario .sub-serv h3, .secundario .sub-serv main #unpocodemi h3, main #unpocodemi .secundario .works h3, .secundario .works main #unpocodemi h3 {
+    margin-top: 10px;
+  }
+  main #servicio {
+    height: 600px;
   }
 }
 @media (min-width: 769px) and (max-width: 999px) {
