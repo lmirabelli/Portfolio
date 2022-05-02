@@ -30,14 +30,25 @@
         }
         .secundario{
             width: 80%;
-            height: auto;
-            margin: 150px 5%;
+            margin: 50px 5%;
             padding: 25px 5%;
             .personal{
                 width: 75%;
                 p{
                    font-size: 14px; 
                 }
+            }
+        }
+        #unpocodemi{
+            height: 750px;
+            img{
+                width: 35%;
+            }
+        }
+        #servicio{
+            height: 720px;
+            h3{
+                font-size: 20px;
             }
         }
     }
