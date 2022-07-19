@@ -52,6 +52,7 @@ $anim: (
         text-align: justify;
         margin: 0px 5px;
     }
+    backdrop-filter: blur(6px);
     .proyect{
         margin-top: 15px;
         margin-left: 10%;
@@ -172,6 +173,10 @@ $anim: (
 
 #trabajos{
     grid-area: trb;
+}
+
+#cert{
+    grid-area: cert;
 }
 
 #contacto{

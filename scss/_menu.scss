@@ -18,7 +18,7 @@
     ul{
         display: flex;
         justify-content: space-around;
-        @for $bt from 1 to 6 {
+        @for $bt from 1 to 7 {
             #boton-#{$bt}{
                 opacity: 0;
                 animation-name: opacidad;

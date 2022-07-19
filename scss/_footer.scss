@@ -1,4 +1,5 @@
 footer{
+    backdrop-filter: blur(16px);
     border-top: 2px solid $color-3;
     box-shadow: 0 -7px 10px rgba($color: #000000, $alpha: .6);
     display: flex;
